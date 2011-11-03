@@ -1,3 +1,9 @@
+# revision 23085
+# category TLCore
+# catalog-ctan /language/hyphenation/icehyph.tex
+# catalog-date 2007-04-17 11:56:04 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-hyphen-icelandic
 Version:	20070417
 Release:	1
@@ -47,6 +53,7 @@ encodings.
 %_texmf_language_dat_d/hyphen-icelandic
 %_texmf_language_def_d/hyphen-icelandic
 %_texmf_language_lua_d/hyphen-icelandic
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,6 +62,8 @@ encodings.
 %build
 
 %install
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-icelandic <<EOF
 %% from hyphen-icelandic:
