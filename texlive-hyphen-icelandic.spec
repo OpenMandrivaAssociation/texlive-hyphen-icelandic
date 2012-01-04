@@ -45,12 +45,12 @@ encodings.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-icelandic <<EOF
-%% from hyphen-icelandic:
+\%\% from hyphen-icelandic:
 icelandic loadhyph-is.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-icelandic <<EOF
-%% from hyphen-icelandic:
+\%\% from hyphen-icelandic:
 \addlanguage{icelandic}{loadhyph-is.tex}{}{2}{2}
 EOF
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
