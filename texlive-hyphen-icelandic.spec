@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-icelandic
 Version:	20070417
-Release:	2
+Release:	3
 Summary:	Icelandic hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/icehyph.tex
@@ -45,14 +45,16 @@ encodings.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-icelandic <<EOF
-\%\% from hyphen-icelandic:
+\%% from hyphen-icelandic:
 icelandic loadhyph-is.tex
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_dat_d}/hyphen-icelandic
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-icelandic <<EOF
-\%\% from hyphen-icelandic:
+\%% from hyphen-icelandic:
 \addlanguage{icelandic}{loadhyph-is.tex}{}{2}{2}
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_def_d}/hyphen-icelandic
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
 cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-icelandic <<EOF
 -- from hyphen-icelandic:
