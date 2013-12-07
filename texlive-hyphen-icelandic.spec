@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-icelandic
 Version:	20070417
-Release:	5
+Release:	6
 Summary:	Icelandic hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/icehyph.tex
