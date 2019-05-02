@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-hyphen-icelandic
-Version:	20181105
+Version:	20190406
 Release:	1
 Summary:	Icelandic hyphenation patterns
 Group:		Publishing
