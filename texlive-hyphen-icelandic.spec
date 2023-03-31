@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-icelandic
 Version:	58652
-Release:	1
+Release:	2
 Summary:	Icelandic hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/icehyph.tex
