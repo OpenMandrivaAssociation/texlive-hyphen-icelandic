@@ -3,7 +3,7 @@ Version:	58652
 Release:	2
 Summary:	Icelandic hyphenation patterns
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/hyphenation/icehyph.tex
+URL:		https://www.ctan.org/tex-archive/language/hyphenation/icehyph.tex
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyphen-icelandic.r%{version}.tar.xz
 BuildArch:	noarch
